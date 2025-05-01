@@ -23,6 +23,9 @@
 file(GLOB donut_engine_src
     include/donut/engine/*.h
     include/donut/engine/ecs/*.h
+    include/donut/engine/ecs/*.cpp
+    include/donut/engine/ecs/Component/*.h
+    include/donut/engine/ecs/Component/*.cpp
     src/engine/*.cpp
     src/engine/*.c
     src/engine/*.h

@@ -281,7 +281,7 @@ void ImGui_Renderer::Render(nvrhi::IFramebuffer* framebuffer)
 {
     if (!imgui_nvrhi) return;
 
-    buildUI();
+    BuildUI();
 
     ImGui::Render();
     imgui_nvrhi->render(framebuffer);

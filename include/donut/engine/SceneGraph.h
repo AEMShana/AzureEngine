@@ -24,6 +24,7 @@
 
 #include <donut/engine/SceneTypes.h>
 #include <donut/engine/KeyframeAnimation.h>
+#include <donut/engine/ecs/Common.h>
 #include <donut/core/math/math.h>
 #include <memory>
 #include <unordered_map>
