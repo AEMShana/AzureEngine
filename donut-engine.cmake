@@ -22,6 +22,7 @@
 
 file(GLOB donut_engine_src
     include/donut/engine/*.h
+    include/donut/engine/ecs/*.h
     src/engine/*.cpp
     src/engine/*.c
     src/engine/*.h
@@ -34,7 +35,7 @@ endif()
 add_library(donut_engine STATIC EXCLUDE_FROM_ALL ${donut_engine_src})
 target_include_directories(donut_engine PUBLIC include)
 
-target_link_libraries(donut_engine donut_core nvrhi jsoncpp_static stb cgltf ShaderMakeBlob)
+target_link_libraries(donut_engine donut_core nvrhi jsoncpp_static stb cgltf EnTT ShaderMakeBlob)
 
 add_dependencies(donut_engine donut_shaders)
 

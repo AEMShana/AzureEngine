@@ -45,6 +45,11 @@ if (NOT TARGET cgltf)
     target_include_directories(cgltf INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/cgltf)
 endif()
 
+if (NOT TARGET EnTT)
+    add_library(EnTT INTERFACE)
+    target_include_directories(EnTT INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/entt/src)
+endif()
+
 # Optional dependencies
 
 if (DONUT_WITH_TINYEXR AND NOT TARGET tinyexr)
